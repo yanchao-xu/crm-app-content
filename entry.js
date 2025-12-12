@@ -1,4 +1,5 @@
 import 'vite/modulepreload-polyfill';
+import './src/style.css';
 import mount from './src/main';
 export * from './src/main';
 

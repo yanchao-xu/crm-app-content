@@ -1,16 +1,14 @@
 import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+
 import vitePlugin from "./vitePlugin";
 import path from "path";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    react(),
-    vitePlugin(),
-    //
-  ],
+  plugins: [react(), vitePlugin()],
+  css: {
+    postcss: "./postcss.config.js",
+  },
   server: {
     cors: true,
   },
