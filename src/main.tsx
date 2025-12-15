@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import App from './App';
-import './style.css';
+import './index.css';
 import type { MountParams, MountReturn } from '../icp-extension.types';
 
 export default function mount<T>(

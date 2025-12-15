@@ -1,7 +1,7 @@
-import 'vite/modulepreload-polyfill';
-import './src/style.css';
-import mount from './src/main';
-export * from './src/main';
+import "vite/modulepreload-polyfill";
+import "./src/index.css";
+import mount from "./src/main";
+export * from "./src/main";
 
 function fixViteShadowRootCss(element) {
   if (import.meta.env.DEV) {
